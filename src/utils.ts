@@ -88,6 +88,7 @@ export const getRelatedArticles = async (client: contentful.ContentfulClientApi,
     skip: 0,
     content_type: ContentType.HealthPage,
     include: 1,
+    select,
     'fields.conditionFacet': slug,
     'fields.pageType': PageType.Article,
   };
